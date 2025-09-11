@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+   
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url('media/543188.jpg');
+    background-size: cover;
+    background-position: center;
+
+}
+.container{
+    
+    
+    height: 100vh;
+    color: white;
+    width: 200px;
+    margin: 5px; 
+    padding: 5px;
+    border: 2px solid rgb(6, 6, 6);
+
+
+   
+}
