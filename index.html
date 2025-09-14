@@ -10,46 +10,43 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
-
+  <title>reCAPTCHA demo: Simple page</title>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+ 
+  
+    
 </head>
 <body >
   
  <div class="container mid">
    <h1 class="mid hud">BE A BATMAN</h1>
    <H2 class="mid">FILL OUT THE DETAILS BELOW</H2>
-   <form>
+   <form action="next.html">
     <div class="info mid">
-        
         <label for="name">
           <h3>Name</h3>
         </label>
         <input type="text" placeholder="eg: bruce wayne" >
     </div>
     <div class="info mid">
-        
         <label for="email">
           <h3>Email</h3>
         </label>
-        <input type="email" placeholder="eg: bruce@akgec.ac.in" />
-
+        <input type="email" placeholder="eg: bruce@akgec.ac.in"  required/>
     </div>
     <div class="info mid">
-        
         <label for="phone">
           <h3>Phone Number</h3>
         </label>
         <input type="tel" placeholder="eg: 989898xxxx" />
-
     </div>
     <div class="info mid">
-        
         <label for="age">
           <h3>Age</h3>
         </label>
-        <input type="number" placeholder="eg: 24" />
+        <input type="number" placeholder="eg: 24"/>
     </div>
     <div class="info mid">
-        
         <label for="DOB">
           <h3>Date Of Birth</h3>
         </label>
@@ -74,11 +71,15 @@
         <input type="password" placeholder="Confirm Password" >
     </div>
     <div class="info mid">
-        <button type="submit">Submit</button>
+      <div class="g-recaptcha" data-sitekey="6LdvVskrAAAAAMucE4b8iud4zdAu_oPwEfAc6rnZ"></div>
     </div>
-
+    <div class="info mid">
+        <button type="submit" class="btn hud">SUBMIT</button>
+    </div>
    </form>
-
  </div>
+
+
 </body>
 </html>
+
